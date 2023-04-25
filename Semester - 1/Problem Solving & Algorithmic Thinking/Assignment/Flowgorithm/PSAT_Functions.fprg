@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nitin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 02:50:54 PM"/>
+        <attribute name="created" value="bml0aW47QVNVUzsyMDIyLTAxLTA3OzExOjE1OjU4IEFNOzIxMjY="/>
+        <attribute name="edited" value="bml0aW47QVNVUzsyMDIyLTAyLTAyOzAyOjQyOjE1IFBNOzE7Z29rdWw7REVTS1RPUC00NkRWSDVROzIwMjItMDEtMDc7MTE6NTk6NDMgQU07Rmlib25uYWNpYW5kRmFjdG9yaWFsLmZwcmc7NzgyMw=="/>
+        <attribute name="edited" value="bml0aW47QVNVUzsyMDIyLTAyLTAyOzAyOjUwOjU0IFBNOzQ7MjI0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <call expression="Fact(n)"/>
+            <call expression="Fibo(n)"/>
+        </body>
+    </function>
+    <function name="Fact" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <for variable="i" start="n" end="1" direction="dec" step="1">
+                <assign variable="fact" expression="fact*i"/>
+            </for>
+            <output expression="Fact" newline="True"/>
+        </body>
+    </function>
+    <function name="Fibo" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="f1" type="Integer" array="False" size=""/>
+            <declare name="f2" type="Integer" array="False" size=""/>
+            <assign variable="f1" expression="0"/>
+            <assign variable="f2" expression="1"/>
+            <output expression="0" newline="True"/>
+            <output expression="1" newline="True"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="fn" type="Integer" array="False" size=""/>
+            <assign variable="fn" expression="0"/>
+            <assign variable="i" expression="2"/>
+            <for variable="fn" start="i" end="n" direction="inc" step="1">
+                <assign variable="fn" expression="f1+f2"/>
+                <output expression="fn" newline="True"/>
+                <assign variable="f1" expression="f2"/>
+                <assign variable="f2" expression="fn"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

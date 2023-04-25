@@ -1,0 +1,237 @@
+Intoduction
+
+Cyber crime is not an old sort of crime to the world. It is defined as
+any criminal activity which takes place on or over the medium of computers or
+internet or other technology recognised by the Information Technology Act.
+Cyber crime is the most prevalent crime playing a devastating role in Modern
+India. Not only the criminals are causing enormous losses to the society and
+the government but are also able to conceal their identity to a great extent.
+There are number of illegal activities which are committed over the internet by
+technically skilled criminals. Taking a wider interpretation it can be said that,
+Cyber crime includes any illegal activity where computer or internet is either a
+tool or target or both.The term cyber crime may be judicially interpreted in some judgments
+passed by courts in India, however it is not defined in any act or statute passed
+by the Indian Legislature.
+
+Cybercrime encompasses any criminal act 
+dealing with computers and networks. It 
+includes crime conducted through the Internet. 
+The Internet is basically the network of 
+networks used across for communication and 
+sharing of data. Cybercrime also known as 
+the computer crime is the use of an instrument 
+for illegal ends, such as committing fraud, 
+trafficking in child pornography and 
+intellectual property, stealing identities, or 
+violating privacy.With the advancement of the Internet 
+technologies like the 2G and 3G, the global 
+village is effectively sharing and 
+communicating vital data(s) across the 
+network. However, there are some who are 
+intentionally trying to track and extract the 
+vital and confidential information illegally for 
+their personal use or for the financial 
+achievement and many more.
+
+
+II. SOME CYBER ATTACK TOOLS AND
+METHODS
+There are so many types of attacks in the cyberspace.
+Therefore, computer scientists should be able to
+protect computers from them. Attackers use these
+attacks and spoil computers and networks by the
+ways of changing, destroying, cutting the services 
+International Journal of Advances in Science Engineering and Technology, ISSN: 2321-9009, Vol-4, Iss-2, Spl. Issue-2 May.-2016
+Cyber Security, Tools And Methods of Cyber Threats, Dimension of Cyber Threats at the Present Time and Cyber Armies
+218
+and leaking information. These attacks can harm
+people, organisations and public bodies. They can
+cause financial damages and loss of reputations.
+In the cyberspace, most of these threats appears with
+more than one variable. Because of
+multidimensionality of threats, cyber defence has to
+be multidimensionality, as well. In cyberspace, every
+move should be in secret. But solving of advanced
+security programs require associations. In this part of
+article, cyber attack tools and methods will be
+explained.
+
+2.1. Viruses
+Viruses are computer softwares which change
+themselves as system files or programs. Viruses are
+special malicious softwares that set-off to other files
+and spread. The first virus according to records is a
+boot sector virus named “Brain” and it has appeared
+in 1986 (Graham & Howard, 2010). Basic principle
+of loading viruses is that the viruses need to be
+activated by users. Else they can’t load themselves.
+Viruses generally set-off to systems with the ways of
+opening e-mails and running USBs automatically.
+
+2.2. Worms
+Worms are malicious softwares that copy themselves
+from one device to another as viruses. Their basic
+difference from the viruses is that worms don’t need
+to be activated by users. Worms especially capture
+functions thattransport files and data. After they setoff the system, they keep spreading themselves. The
+most dangerous characteristic of worms is their
+substantially reproduction abilities. They use methods
+of transportation data and files in setted-off systems
+and they send themselves to every e-mail in all
+systems that are in contact with setted-off systems.
+Because of that network traffic can be too slower.
+Especially in early on they are created, security
+softwares can’t know them so they spread so fast and
+they influence network traffic negatively. Because of
+that, these influential worms are used in cyber attacks
+intensely. Because worms doesn’t need a program or
+file to spread, worms can drive tunnels in systems and
+they provide opportunity of capturing remote access
+(Virüs, SolucanveTruvaAtıNedir?, 2012).
+
+2.3. Trojan Horses
+Trojan horses are the computer programs which
+presents themselves as they have beneficial functions
+but at the same time they enclose malicious functions
+to bypass the security mechanisms and sometimes
+they exploit authorisations of legitimate system units
+(Kissel (Ed.), 2011). Generally Trojan horses are
+presented as free softwares and they set-off the
+systems by downloading and loading by users.
+Generally Trojan horses provide opportunity of
+capturing remote access. Therefore, they provide
+opportunity of using computers as zombie computers,
+either. Best way of being protected from Trojan
+horses is not loading of programs that have unknown
+sources.
+
+2.4. Rootkits
+Rootkits are the computer programs which are set-off
+the system, hide themselves among running
+processes, provide opportunity of capturing remote
+access and hard to find
+(UlusalSiberOlaylaraMüdahaleMerkezi, 2014).
+Objectives of rootkits are not making systems slower
+or spreading. Their objectives are to establish
+complete dominance on computers and hide
+themselves.
+Rootkits set-off the systems with the way of running
+senior authority. In addition, they set-off in multiuser
+systems with the way of gaining root privileges by
+root aperture.
+
+2.5. Spywares
+Spywares are computer softwares that created for
+spying on computers. Spywares collect important
+information of users and process of users without
+user’s knowledge and they provide opportunity of
+these informations sending to ill-wishers
+(UlusalSiberOlaylaraMüdahaleMerkezi, 2014).
+Spywares don’t need to spread like viruses and
+worms. Their objectives are ensuring confidentiality
+of themselves and collecting information. They
+generally install in free versions of programs and the
+computer warn when they are installed. But generally
+users don’t care about warnings and install spywares
+unconsciously.
+
+2.6. Denial of Service(DOS)
+Denial of Service is inhibition of users access and
+making that the system can not provide service. In
+some conditions, service may not stop but it
+slowdowns and system doesn’t mean anything for
+providing service. In denial of service attacks,
+network sources of host computer are exhausted and
+it is expected to become unable to respond requests
+from the system. If denial of service attacks are
+carried out from more than one resources, it is named
+as distributed denial of service(DDOS). Denial of
+service attacks can be made as method of occupy the
+network or making the system unavailable by
+physical damage.
+
+Cybercrimes 
+
+[7]Cybercrime encompasses a wide range of 
+crimes including stealing people’s identity, 
+fraud and financial crimes, [2] pornography, 
+selling contraband items, downloading illegal 
+files etc. According to the authors in [2] and 
+[8], any crime involving a computer and 
+Internet is called cyber crime. Some of the 
+popular and alarming crimes in the cyber 
+world are discussed below:
+
+A. Financial Crimes
+With the increasing demand of the on-line 
+banking, the financial crimes have become 
+very alarming. Financial crimes include credit 
+card frauds, stealing money from on-line 
+banks etc. The criminals of credit card fraud 
+get information from their victims often by 
+impersonating a Government official or people 
+from financial organizations asking for their 
+credit information. The victims fall prey to this 
+without proper inquiries and give away their 
+credit card information to these criminals. In 
+this ways, criminals may steal their identity 
+and the consequences are mostly financially 
+damaging.
+
+C. Drug Trafficking
+[2] Drug traffickers contribute a major part of 
+cyber crime to sell narcotics using the latest 
+technologies for encrypting mails. [7] They 
+arrange where and how to make the exchange, 
+mostly using couriers. Since there is no 
+personal communication between the buyer 
+and dealer, these exchanges are more 
+comfortable for intimidated people to buy 
+illegal drugs and even other items.
+
+D. Cyber Terrorism
+[7]Terrorism acts which are committed in 
+cyberspace are called cyber terrorism. Cyber 
+terrorism may include a simple broadcast of 
+information on the Internet about bomb attacks 
+which may happen at a particular time in the 
+future. [2] Cyber terrorists are people who 
+threaten and coerce an individual, an 
+organization or even a government by 
+attacking them through computers and 
+networks for their personal, political or social 
+benefits.
+
+E. Online Gambling
+[8]On-line gambling offered by thousands of 
+websites that have their servers hosted abroad. 
+These websites are the one of the most 
+important sites for money launderers.
+
+F. Cyber Stalking
+[9] ‘Stalking’ as has been defined in Oxford 
+dictionary, means “pursuing stealthily”. Cyber 
+stalking is following an individual’s or 
+organization’s whereabouts on the Internet. 
+These may include sending threatening or nonthreatening messages on the victim’s bulletin 
+boards, which may be by social networking 
+sites or even through e-mails. According to 
+David Wall [2], one of the prevalent forms of 
+Cybercrime is Cyber stalking. This is basically 
+a crime where the individual is constantly 
+harassed by another individual example, 
+sending constant mails to any individual with 
+unsuitable contents and threat messages.
+
+G. E-mail Spoofing and Phishing Scams
+Cyber criminals often spoof e-mails of known 
+and unknown individuals. [9]E-mail spoofing 
+basically means sending an e-mail from a 
+source while it appears to have been sent from 
+another e-mail. E-mail spoofing is a very 
+common cause of monetary damages. [10]The 
+act that attempts to obtain vital information 
+like passwords, details of credit cards by 
+pretending to be a trustworthy entity in an 
+electronic company is called phishing. 
+Phishing e-mails are likely to contain hyperlinks to the sites containing malwares.

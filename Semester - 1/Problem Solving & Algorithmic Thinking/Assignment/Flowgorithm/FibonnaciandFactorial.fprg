@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gokul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 12:43:31 PM"/>
+        <attribute name="created" value="Z29rdWw7REVTS1RPUC00NkRWSDVROzIwMjItMDEtMDc7MTE6NTk6NDMgQU07Mjg2MQ=="/>
+        <attribute name="edited" value="Z29rdWw7REVTS1RPUC00NkRWSDVROzIwMjItMDEtMDc7MTI6NDM6MzEgUE07MTsyOTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <call expression="factorial(n)&#13;&#10;"/>
+            <call expression="fibonacci(n)"/>
+        </body>
+    </function>
+    <function name="factorial" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <assign variable="fact" expression="1"/>
+            <for variable="a" start="n" end="1" direction="dec" step="1">
+                <assign variable="fact" expression="fact*a"/>
+            </for>
+            <output expression="fact" newline="True"/>
+        </body>
+    </function>
+    <function name="fibonacci" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot; 0 1&quot;" newline="False"/>
+            <for variable="count" start="0" end="n-3&#13;&#10;" direction="inc" step="1">
+                <assign variable="c" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <output expression="&quot; &quot;" newline="False"/>
+                <output expression="c" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
