@@ -1,0 +1,45 @@
+//Storage classes : scope of a variable 
+
+ 
+
+#include<stdio.h>
+
+ 
+
+int t=0; //t is a global variable, every where the scope exists
+int w; // w is global
+int a[5];// array a is global
+static int s1=5;
+int x=5; //x is global variable;
+void fun()
+{
+    int x=1; //x is a local(auto) variable of function fun(). The scope of x is within fun(). 
+            //This means we can access variable x only within fun().
+    printf("\nvalue =%d",x+w);
+    printf("\nt value =%d",t);
+    printf("\nThe sum of array elemnts is %d",a[0]+a[1]+a[2]+a[3]+a[4]);
+   static int s=2;//s is static : once only you can initialize s, and the scope of s is within fun()
+   s=s+1;
+   s1=s1+1;
+   printf("\nsum value =%d",s+s1);
+   
+   {
+   extern int x; //x is extern variable
+   printf("\nx value outside is adding with s1 %d",x+s1);
+   }
+}
+int main()
+{
+    int y=0,i; //y is a local(auto) variable of function main().The scope of y is within main().
+           //This means we can access variable y only within main().
+           w=1;
+    printf("\ny value =%d",y);
+    printf("\nt value =%d",t);
+    printf("\n");
+    for(i=0;i<5;i++)
+    a[i]=4;
+    fun();
+    printf("\n");
+    fun();
+return 0;
+}

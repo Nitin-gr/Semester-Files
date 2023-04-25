@@ -1,0 +1,165 @@
+1.#include <stdio.h>
+int take(int remain, int taken){
+    remain = remain - taken;
+    return (remain);
+}
+
+int put(int remain, int put_away){
+    remain = remain + put_away;
+    return (remain);
+}
+
+int refer(int remain, int number){
+    remain = remain + (50*number);
+    return (remain);
+}
+
+
+int main()
+{
+    char chr, buffer;
+    int bal, check_d, check_y, with, dep, num;
+    printf("Enter your account balance (>500): ");
+    scanf("%d", &bal);
+    scanf("%c", &buffer);
+    while (1)
+    {
+    printf("\n'W' or 'w' for withdrawal");
+    printf("\n'D' or 'd' for deposit");
+    printf("\n'Y' or 'y' for refering your friend");
+    printf("\n'Q' or 'q' for quiting the process\n");
+    printf("\nEnter your operation: ");
+    scanf("%c", &chr);
+
+    switch(chr)
+    {
+    case 'W':
+    case 'w':
+            {
+            printf("\nEnter the amount to be withdrawn: ");
+            scanf("%d", &with);
+            if (bal>with)
+            {
+            bal = take(bal, with);
+            printf("\nAmount withdrawn successfully");
+            printf("\nThe balance in your account is %d", bal);
+            }
+            else
+            printf("\nNot sufficient balance...");
+            break;
+            }
+    case 'D':
+    case 'd':
+            {
+            printf("\nEnter the amount to be deposited: ");
+            scanf("%d", &dep);
+            check_d = put(bal, dep);
+            printf("\nAmount deposited successfully");
+            printf("\nThe balance in your account is %d", check_d);
+            break;
+            }
+    case 'Y':
+    case 'y':
+            {
+            printf("\nHow many friends you want to refer: ");
+            scanf("%d", &num);
+            check_y = refer(bal, num);
+            printf("\nThe balance in your account is %d", check_y);
+            break;
+            }
+    case 'Q':
+    case 'q':
+	return 0;
+            break;
+    default:
+            printf("\nEnter a valid alphabet for operation");
+    }
+    }
+    return 0;
+}
+
+2. #include <stdio.h>
+
+int power(int a,int b){
+    int i, val=1;
+    for (i = 0;i<b;i++){
+        val = val * a;
+    }
+    return val;
+}
+
+int gcd(int a, int b){
+    int i, val;
+    for(i=1; i <= a && i <= b; ++i){
+        if(a%i==0 && b%i==0)
+            val = i;
+    }
+    return val;
+}
+
+int chk_prime(int a){
+    int pr = 1;
+    int i;
+    for (i=2;i<a;i++){
+        if (a%i == 0)
+            pr = 0;
+    }
+    return pr;
+}
+
+int prime(int a){
+    int i;
+    for (i=2;i<=a;i++){
+        if (chk_prime(i) == 1)
+            printf("%d\n",i);
+    }
+    return 0;
+}
+
+int main(void){
+    int chr;
+    int a,b, x = 1;
+    int answer1,answer2,answer3;
+    while (x == 1){
+    printf("\n1 for finding power of a number\n");
+    printf("2 for finding GCD(HCF) of 2 numbers\n");
+    printf("3 for printing all primes between 1 and given number\n");
+    printf("4 for quitting this program\n");
+    printf("Choose from above options: ");
+    scanf("%d", &chr);
+    
+    
+        switch(chr){
+        case 1:
+            printf("Enter a number: ");
+            scanf("%d", &a);
+            printf("Enter a number: ");
+            scanf("%d", &b);
+            answer1 = power(a,b);
+            printf("%d", answer1);
+            break;
+                
+        case 2:
+            printf("Enter a number: ");
+            scanf("%d", &a);
+            printf("Enter a number: ");
+            scanf("%d", &b);
+            answer2 = gcd(a,b);
+            printf("G.C.D of %d and %d is %d", a, b, answer2);
+            break;
+                
+        case 3:
+            printf("\nEnter a number till which prime number is to be printed: ");
+            scanf("%d", &a);
+            answer3 = prime(a);
+            printf("\nThe balance in your account is %d", answer3);
+            break;
+        case 4:
+            x = 0;
+            break;
+
+        default:
+            printf("\nEnter a valid number for operation");
+        }
+    }
+}

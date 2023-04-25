@@ -1,0 +1,101 @@
+1. Write a program which will take 2 integer numbers as input from user and it will print output after performing addition, subtraction, multiplication, division and modulus operations.
+ Print each output in different line and give a tab between operation name and value calculated.
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, sum, sub, mul, divi, mod;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    sum = num1+num2;
+    printf("Addition: %d\n", sum);
+    sub = num1-num2;
+    printf("Subraction: %d\n", sub);
+    mul = num1*num2;
+    printf("Multiplication: %d\n", mul);
+    divi = num1/num2;
+    printf("Division: %d\n", divi);
+    mod = num1%num2;
+    printf("Remainder: %d\n", mod);
+    return 0;
+} 
+
+2. Repeat the above program with float numbers.
+
+#include <stdio.h>
+
+int main()
+{
+    float num1, num2, sum, sub, mul, divi, mod;
+    printf("Enter the first number: ");
+    scanf("%f", &num1);
+    printf("Enter the second number: ");
+    scanf("%f", &num2);
+    sum = num1+num2;
+    printf("Addition: %f\n", sum);
+    sub = num1-num2;
+    printf("Subraction: %f\n", sub);
+    mul = num1*num2;
+    printf("Multiplication: %f\n", mul);
+    divi = num1/num2;
+    printf("Division: %f\n", divi);
+    mod = num1%num2;
+    printf("Remainder: %f\n", mod);
+    return 0;
+}    
+
+3. Write a program to take principle, rate and time from user and print the simple interest as output
+
+#include <stdio.h>
+
+int main()
+{
+    int principle, rate, tim, simple_interest;
+    
+    printf("Enter the principle: ");
+    scanf("%d", &principle);
+    
+    printf("Enter the rate: ");
+    scanf("%d", &rate);
+    
+    printf("Enter the tim: ");
+    scanf("%d", &tim);
+    
+    simple_interest=((principle*rate*tim)/100);
+    printf("The simple interest is %d\n", simple_interest);
+    return 0;
+}
+
+4. Take an integer from user and print square of it.
+
+#include <stdio.h>
+
+int main()
+{
+    int num,sq_num;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    sq_num = num * num;
+    printf("The square of the entered number is %d", sq_num);
+    return 0;
+}
+
+5. Take one float number and one integer from user and multiply and divide integer with float. Write down your observation. Try vice-versa also.
+
+#include <stdio.h>
+
+int main()
+{
+    int num1; float num2;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("\nEnter the second number: ");
+    scanf("%f", &num2);
+    printf("Multiplication = %f\n", num1*num2);
+    printf("Division = %f", num1/num2);
+    return 0;
+}
+

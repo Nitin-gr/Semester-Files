@@ -1,0 +1,265 @@
+                                                                                                                                   Computer Programming Lab – 2
+
+1. Write a program to print if number is divisible by 3 or 5 or both. Input should be given by user.
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    if (num%3 == 0 && num%5 ==0)
+    printf("The number %d is divisible by both 3 and 5", num);
+    else if (num%3 == 0)
+    printf("The number %d is divisible by 3", num);
+    else if (num%5 == 0)
+    printf("The number %d is divisible by 5", num);
+    else 
+    printf("The number %d is neither divisible by 3 nor 5", num);
+    return 0;
+}
+
+
+2. Write a program to print to find largest of three given numbers. Input should be given by user.
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, num3;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    printf("Enter the third number: ");
+    scanf("%d", &num3);
+    if (num1>num2 && num1>num3)
+    printf("The number %d is the largest among the entered three numbers", num1);
+    else if (num2>num1 && num2>num3)                                                                              /* num2>num1 not required
+    printf("The number %d is the largest among the entered three numbers", num2);
+    else
+    printf("The number %d is the largest among the entered three numbers", num3);
+    return 0;
+}
+
+
+3. Write a program to find factorial of a number.
+
+#include <stdio.h>
+
+int main()
+{
+    int num, i, fact=1;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    for (i=1; i<=num; i++)
+    {
+        fact = fact*i;
+    }
+    printf("The factorial of the number %d is %d", num, fact);
+    return 0;
+}
+
+
+4. Write a program to check if a number is prime or not.
+
+#include <stdio.h>
+
+int main()
+{
+    int  num, i, c=0;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    if (num >=1)
+    for (i=2; i<=num; i++)
+    {
+        if (num%i == 0)
+        {
+        printf("The entered number is not prime");
+        c=1;
+        break;
+        }
+    }    
+        if (c == 0)
+        printf("The entered number is prime");
+    return 0;
+}
+
+5. Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: 
+For first 50 units Rs. 0.50/unit For next 100 units Rs. 0.75/unit For next 100 units Rs. 1.20/unit For unit above 250 Rs. 1.50/unit An additional surcharge of 20% is added to the bill. Take number of units from user
+
+
+#include <stdio.h>
+
+int main()
+{
+    int unit; 
+    float bill, cost;
+    printf("Enter the electricity unit charges: ");
+    scanf("%d", &unit);
+    if (unit<=50)
+    {
+    bill = unit*0.50;
+    cost = bill + (bill*0.2);
+    printf("The total electricity bill is %f\n", cost);
+    }
+
+    else if (unit>50 && unit<=150) 
+    {
+    bill = (50*0.5)+ ((unit-50)*0.75);
+    cost = bill + (bill*0.2);
+    printf("The total electricity bill is %f\n", cost);
+    }
+ 
+    else if (unit>150 && unit<=250)
+    {
+    bill = (50*0.5)+ (100*0.75)+ ((unit-150)*1.20);
+    cost = bill + (bill*0.2);
+    printf("The total electricity bill is %f\n", cost);
+    }
+
+    else if (unit>250)
+    {
+    bill = (50*0.5)+ (100*0.75)+ (100*1.2)+ ((unit-250)*1.50);
+    cost = bill + (bill*0.2);
+    printf("The total electricity bill is %f\n", cost);
+    }
+    return 0;
+}
+ 
+
+6. Write a program to check whether a triangle is valid. If valid, find if it is isosceles, equilateral, or scalene.
+
+#include <stdio.h>
+int main()
+{
+int num, i, c=0;
+printf("Enter the number: ");
+scanf("%d", &num);
+if (num >=1)
+{
+for (i=2; i<num; i++)
+{
+if (num%i == 0)
+{
+
+c=1;
+break;
+}
+}
+}
+if (c == 0)
+printf("The entered number is prime");
+else
+printf("The entered number is not prime");
+return 0;
+}
+
+
+7. Write a program to find whether a given year is leap or not. Year is provided by user. NOTE: A year is leap if it is divisible by 4 and not divisible by 100. A year is also leap if it is divisible by 400.
+
+#include <stdio.h>
+
+int main()
+{
+    int year;
+    printf("Enter the year: ");
+    scanf("%d", &year);
+    if (year%400 == 0)
+    {
+        printf("It's a Leap year");
+    }
+    else if (year%4 == 0 && year%100 != 0) 
+    {
+         printf("It's a Leap year");
+    }
+    else 
+    {
+        printf("It's not a Leap year");
+    }
+    return 0;
+}
+
+
+8. Write program to print following patterns.
+   1 
+   12
+   123
+   1234 
+   12345
+
+#include<stdio.h>
+
+int main()
+{
+    int i, j;
+    for (i=1; i<=5; i++)
+    {
+       for (j=1; j<=i; j++)
+    {
+        printf("%d", j);
+    }
+    printf("\n");
+    }
+    
+    return 0;
+}
+
+
+9.     * 
+      *** 
+    ***** 
+      *** 
+        *
+
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j;
+    for(i=1; i<=5; i++)
+    {
+        for(j=1; j<=5; j++)
+        {
+        if(i == 3 || j == 3)
+        printf("*");
+        else if ((i == 2 || i == 4) && (j == 4 || j == 2))
+        printf("*");
+        else
+        printf(" ");
+        }
+    printf("\n");
+
+    }
+    
+
+    return 0;
+}
+
+
+10.
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,a;
+    for(i=1; i<=9; i++){
+        a = i;
+        if (i>5)
+        a = 10-i;
+        for (j=1; j<=9; j++){
+            if (i == j)
+            printf("%d", a);
+            else if (i+j == 10)
+            printf("%d", a);
+            else
+            printf(" ");
+        }
+    printf("\n");
+    }
+
+    return 0;
+}

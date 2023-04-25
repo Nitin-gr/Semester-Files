@@ -1,0 +1,40 @@
+//add two matrices
+#include <stdio.h>
+
+ 
+
+int main()
+{   int i,j,r,c;
+    printf("\nEnter the number of rows\t");
+    scanf("%d",&r);
+    printf("\nEnter the number of columns\t");
+    scanf("%d",&c);
+    int a[r][c],b[r][c];
+    printf("\nEnter the first matrix");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {printf("\nEnter the (%d,%d)th location value of array a\t",i,j);
+        scanf("%d",&a[i][j]);
+        }
+    }
+    
+    printf("\nEnter the second matrix");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+        printf("\nEnter the (%d,%d)th location value of array b\t",i,j);
+        scanf("%d",&b[i][j]);
+        }
+    }
+    
+    printf("\nThe sum of two matrices\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        printf("%d\t",a[i][j]+b[i][j]);
+        printf("\n");
+    }
+    return 0;
+}

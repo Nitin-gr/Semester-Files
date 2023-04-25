@@ -1,0 +1,93 @@
+#include <stdio.h>
+void print(int b[], int m)
+{
+    int i;
+    
+    for(i=0;i<m;i++)
+    {
+        printf("%d\t",b[i]);
+    }
+}
+
+ 
+
+int main()
+{
+  int m=2;
+  int a[m];
+  a[0]=1;
+  a[1]=2;
+  print(a,m);
+return 0;
+}
+
+
+#include <stdio.h>
+void print(int m,int n, int b[][n])
+{
+    int i,j;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        printf("%d\t",b[i][j]);
+    }
+}
+
+ 
+
+int main()
+{ int m=2,n=2;
+  int a[2][2]={{1,2},{3,4}};
+  print(m,n,a);
+return 0;
+}
+
+
+#include <stdio.h>
+void print(int m,int n, int b[][n])
+{
+    int i,j;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+        printf("%d\t",b[i][j]);
+        
+        }
+        printf("\n");
+    }
+}
+
+ 
+
+int main()
+{ int m=5,n=5;
+  int a[5][5]={ [0 ... 4] = { [0 ... 4] = 10} };
+  print(m,n,a);
+return 0;
+}
+
+
+#include <stdio.h>
+void print(int m,int n, int b[][n])
+{
+    int i,j;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+        printf("%d\t",b[i][j]);
+        
+        }
+        printf("\n");
+    }
+}
+
+ 
+
+int main()
+{ int m=5,n=6;
+  int a[5][6]={10};
+  print(m,n,a);
+return 0;
+}

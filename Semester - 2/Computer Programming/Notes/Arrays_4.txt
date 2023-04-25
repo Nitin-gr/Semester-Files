@@ -1,0 +1,175 @@
+#include <stdio.h>
+
+int main()
+{
+  int m, n, p, q, c, d, k, sum = 0;
+ 
+  printf("Enter the number of rows of first matrix in variable m\n");
+  scanf("%d", &m);
+ 
+  printf("Enter the number of columns of first matrix in variable n\n");
+  scanf("%d",&n);
+
+  int first[m][n];
+ 
+  printf("Enter the elements of first matrix\n");
+
+  for (  c = 0 ; c < m ; c++ )
+    for ( d = 0 ; d < n ; d++ )
+      scanf("%d", &first[c][d]);
+
+ 
+  printf("Enter the number of rows of second matrix\n");
+  scanf("%d", &p);
+ 
+  printf("Enter the number of columns of second matrix\n");
+  scanf("%d",&q);
+
+ int second[p][q];
+ int multiply[m][q];
+
+  ( n != p )?
+    (printf("Matrices with entered orders can't be multiplied with each other.\n")):
+  (
+  {
+    printf("Enter the elements of second matrix\n");
+
+    for ( c = 0 ; c < p ; c++ )
+      for ( d = 0 ; d < q ; d++ )
+        scanf("%d", &second[c][d]);
+
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+      {
+        for ( k = 0 ; k < p ; k++ )
+        {
+          sum = sum + first[c][k]*second[k][d];
+        }
+
+        multiply[c][d] = sum;
+        sum = 0;
+      }
+    }
+
+ printf("\nFirst matrix\n");
+
+  for (  c = 0 ; c < m ; c++ )
+  {
+    for ( d = 0 ; d < n ; d++ )
+      printf("%d\t", first[c][d]);
+      printf("\n");
+  }
+
+
+ printf("\nSecond matrix\n");
+ for ( c = 0 ; c < p ; c++ )
+   {
+      for ( d = 0 ; d < q ; d++ )
+        printf("%d\t", second[c][d]);
+        printf("\n");
+   }
+
+
+    printf("Product of entered matrices:-\n");
+
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+        printf("%d\t", multiply[c][d]);
+
+      printf("\n");
+    }
+  }
+ );
+  return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+  int m, n, p, q, c, d, k, sum = 0;
+ 
+  printf("Enter the number of rows of first matrix in variable m\n");
+  scanf("%d", &m);
+ 
+  printf("Enter the number of columns of first matrix in variable n\n");
+  scanf("%d",&n);
+
+  int first[m][n];
+ 
+  printf("Enter the elements of first matrix\n");
+
+  for (  c = 0 ; c < m ; c++ )
+    for ( d = 0 ; d < n ; d++ )
+      scanf("%d", &first[c][d]);
+
+ 
+  printf("Enter the number of rows of second matrix\n");
+  scanf("%d", &p);
+ 
+  printf("Enter the number of columns of second matrix\n");
+  scanf("%d",&q);
+
+ int second[p][q];
+ int multiply[m][q];
+
+  ( n != p )?
+    (printf("Matrices with entered orders can't be multiplied with each other.\n")):
+  (
+  {
+    printf("Enter the elements of second matrix\n");
+
+    for ( c = 0 ; c < p ; c++ )
+      for ( d = 0 ; d < q ; d++ )
+        scanf("%d", &second[c][d]);
+
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+      {
+        for ( k = 0 ; k < p ; k++ )
+        {
+          sum = sum + first[c][k]*second[k][d];
+        }
+
+        multiply[c][d] = sum;
+        sum = 0;
+      }
+    }
+
+ printf("\nFirst matrix\n");
+
+  for (  c = 0 ; c < m ; c++ )
+  {
+    for ( d = 0 ; d < n ; d++ )
+      printf("%d\t", first[c][d]);
+      printf("\n");
+  }
+
+
+ printf("\nSecond matrix\n");
+ for ( c = 0 ; c < p ; c++ )
+   {
+      for ( d = 0 ; d < q ; d++ )
+        printf("%d\t", second[c][d]);
+        printf("\n");
+   }
+
+
+    printf("Product of entered matrices:-\n");
+
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+        printf("%d\t", multiply[c][d]);
+
+      printf("\n");
+    } 
+  }
+ );
+  return 0;
+}
+ 

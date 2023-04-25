@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main ()
+{
+int count; //used for iteration
+int a; // only one integer a can store
+int b[5]; // 5 integers b can store
+int c[3]; // 3 integers c can store
+printf("\nEnter the element of varaible a");
+scanf("%d",&a);
+printf("\nValue of a is %d",a);
+/*
+printf("\nEnter the element of varaible b at location 0");
+scanf("%d",&b[0]);
+printf("\nThe value of varaible b at location 0 is %d",b[0]);
+printf("\nEnter the element of varaible b at location 1");
+scanf("%d",&b[1]);
+printf("\nThe value of varaible b at location 1 is %d",b[1]);
+printf("\nEnter the element of varaible b at location 2");
+scanf("%d",&b[2]);
+printf("\nThe value of varaible b at location 2 is %d",b[2]);
+printf("\nEnter the element of varaible b at location 3");
+scanf("%d",&b[3]);
+printf("\nThe value of varaible b at location 3 is %d",b[3]);
+printf("\nEnter the element of varaible b at location 4");
+scanf("%d",&b[4]);
+printf("\nThe value of varaible b at location 4 is %d",b[4]);
+*/
+for(count=0;count<5;count++)
+{
+printf("\nEnter the element of varaible b at location %d",count);
+scanf("%d",&b[count]);
+printf("\nThe value of varaible b at location %d is %d",count,b[count]);
+}
+printf("\nEnter the elements of array c");
+for(count=0;count<3;count++)
+scanf("%d",&c[count]);
+printf("\nThe elements of array c");
+for(count=0;count<3;count++)
+printf("%d\t",c[count]);
+return 0;
+}

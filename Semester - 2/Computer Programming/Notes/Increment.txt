@@ -1,0 +1,58 @@
+Pre increment and post increment
+
+#include <stdio.h>
+ 
+int main()
+{​​​​​​ int i,j;
+ 
+i=0;
+i++;
+printf("\n%d",i);
+ 
+printf("\n%d",i++); //post increment == first print value of i then increment
+printf("\n%d",i);
+ 
+printf("\n\n");
+ 
+j=0;
+++j;
+printf("\n%d",j);
+ 
+printf("\n%d",++j);//pre increment == first increment the value of j then only print
+printf("\n%d",j);
+return 0;
+}​​​​​​
+
+Branch Statements
+
+#include <stdio.h>
+ 
+int main()
+{​​​​​​ int i,j;
+ 
+//break statement exit from the loop when condition satisfied
+ 
+for(i=0;i<10;i++)
+{​​​​​​
+printf("\nVIT");
+if(i>4)
+break;
+printf("%d",i);
+}​​​​​​
+ 
+printf("\nIn case of break : The current value of i is %d",i);
+ 
+printf("\n\n");
+//continue statement not exiting from loop. Only omitting the remaining statements after continue within the loop
+ 
+for(i=0;i<10;i++)
+{​​​​​​
+printf("\nAmrita");
+if(i>4)
+continue;
+printf("%d",i);
+}​​​​​​
+printf("\nIn case of continue : The current value of i is %d",i);
+ 
+return 0;
+}​​​​​​

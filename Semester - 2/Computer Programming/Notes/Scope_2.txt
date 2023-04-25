@@ -1,0 +1,218 @@
+
+#include <stdio.h>
+
+int p; //global variable
+
+void a()
+
+{​​​​​
+
+    static int a=20; //static variable
+
+    int t=30; // t is a local(auto) vaiable of function a()
+
+    p=20;
+
+    printf("\nlocal variable t is %d",t);
+
+    printf("\nglobal variable p inside function a() %d",p);
+
+    a=a+1;
+
+    printf("\nstatic variable a is %d",a);
+
+    t=t+1;
+
+}​​​​​ int main()
+
+{​​​​​
+
+    a();
+
+    p=30;
+
+    printf("\n");
+
+    printf("\nglobal variable p inside main %d",p);
+
+    printf("\n");
+
+    a();
+
+    return 0;
+
+}​​​​​
+
+[09:12] Praveen K  (CYBER)
+#include <stdio.h>
+
+int p; //global variable
+
+int s=50;
+
+void a()
+
+{​​​​​
+
+    static int a=20; //static variable
+
+    int t=30; // t is a local(auto) vaiable of function a()
+
+    p=20;
+
+    printf("\nlocal variable t is %d",t);
+
+    printf("\nglobal variable p inside function a() %d",p);
+
+    a=a+1;
+
+    printf("\nstatic variable a is %d",a);
+
+    t=t+1;
+
+}​​​​​ int main()
+
+{​​​​​
+
+    int s=40;
+
+    int i=4;
+
+    a();
+
+    p=30;
+
+    printf("\n");
+
+    printf("\nglobal variable p inside main %d",p);
+
+    printf("\n");
+
+    printf("\n local variable s %d",s);
+
+    i=i+s;
+
+    printf("\n updated value of i with local variable s %d",i);
+
+    a();
+
+    {​​​​​
+
+        extern int s;
+
+        printf("\n external variable s %d",s);
+
+        i=i+s;
+
+    }​​​​​
+
+    printf("\n updated value of i with extern variable s %d",i);
+
+    return 0;
+
+}​​​​​
+
+
+
+main function()
+
+
+#include <stdio.h>
+
+#include "fun.h"
+
+int p; //global variable
+
+int s=50;
+
+void a()
+
+{​​​​​
+
+    static int a=20; //static variable
+
+    int t=30; // t is a local(auto) vaiable of function a()
+
+    p=20;
+
+    printresults();
+
+    printf("\nlocal variable t is %d",t);
+
+    printf("\nglobal variable p inside function a() %d",p);
+
+    a=a+1;
+
+    printf("\nstatic variable a is %d",a);
+
+    t=t+1;
+
+}​​​​​ int main()
+
+{​​​​​
+
+    extern int funvariable;
+
+    int s=40;
+
+    int i=4;
+
+    int w=30;
+
+    w=w+funvariable;
+
+    printresults();
+
+    printf("\n");
+
+    printf("\nlocal varaible w got updated with external funvaraible which is defined in the header file fun.h %d",w);
+
+    a();
+
+    p=30;
+
+    printresults();
+
+    printf("\n");
+
+    printf("\nglobal variable p inside main %d",p);
+
+    printf("\n");
+
+    printf("\n local variable s %d",s);
+
+    i=i+s;
+
+    printf("\n updated value of i with local variable s %d",i);
+
+    a();
+
+    {​​​​​
+
+        extern int s;
+
+        printf("\n external variable s %d",s);
+
+        i=i+s;
+
+    }​​​​​
+
+    printf("\n updated value of i with extern variable s %d",i);
+
+    return 0;
+
+}​​​​​
+
+
+fun.h file
+
+int funvariable=34; void printresults()
+
+{​​​​​
+
+    printf("\nNew Results");
+
+}​​​​​
+
+
+

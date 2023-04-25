@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main()
+{​
+int i,j,k;
+int a1; // a single value stored
+int a2[3]; // 3 values stored (one dimensional array of size 3)
+int a3[2][2];// 4 values stored (two one dimensional array of size 2 each 2*2=4)
+int a4[2][2][3];// 12 values stored (two two dimensional arrays (each contain two one dimensional arrays is of size 3) 2*2*3=12)
+printf("\nEnter the value of a1\t");
+scanf("%d",&a1);
+printf("The value of a1 is %d",a1);
+printf("\nEnter the values of array a2\t");
+for(i=0;i<3;i++)
+scanf("%d",&a2[i]);
+for(i=0;i<3;i++)
+printf("\nThe value at location %d is %d",i,a2[i]);
+printf("\nEnter the values of two dimensioanl matrix a3\t");
+for(i=0;i<2;i++)
+{​
+for(j=0;j<2;j++)
+scanf("%d",&a3[i][j]);
+}​
+for(i=0;i<2;i++)
+{​
+for(j=0;j<2;j++)
+printf("\nThe value at location (%d,%d) is %d",i,j,a3[i][j]);
+}​
+printf("\nEnter the values of three dimensioanl matrix a4 \t");
+for(i=0;i<2;i++)
+{​
+for(j=0;j<2;j++)
+{​
+k=0;
+while(k<3)
+{​
+scanf("%d",&a4[i][j][k]);
+k++;
+}​
+}​
+}​
+for(i=0;i<2;i++)
+{​
+for(j=0;j<2;j++)
+{​
+k=0;
+while(k<3)
+{​
+printf("\nThe value at location (%d,%d,%d) is %d",i,j,k,a4[i][j][k]);
+k++;
+}​
+}​
+}​
+return 0;
+}​

@@ -1,0 +1,29 @@
+# include <stdio.h>
+void main()
+{
+    int a, b, c, big ;
+
+    printf("Enter three numbers : ") ;
+
+    scanf("%d %d %d", &a, &b, &c) ;
+
+    big = a > b ? (a > c ? a : c) : (b > c ? b : c) ; //conditional operator
+   
+    /* The above statement can be written in the following way using if else
+    if(a>b)
+    {
+        if(a>c)
+        big=a;
+        else
+        big=c;
+    }
+    else
+    {
+       if(b>c)
+       big=b;
+       else
+       big=c;
+    }*/
+   
+    printf("\nThe biggest number is : %d", big) ;
+}

@@ -1,0 +1,48 @@
+
+    
+cat file.c
+#include<stdio.h>
+#include"fun.h"
+int i=10;
+extern int fun2();
+extern int fun3();
+int main()
+{​​​​​​
+int a=10,i=20;
+extern int d;
+printf("\n%d",a);
+printf("\n");
+fun1();
+{​​​​​​
+extern int i;
+printf("\nThe value of i is %d",i);
+}​​​​​​
+
+
+printf("\nThe value of external vaiable d is %d",d);
+//printf("\nThe return_value of the external function fun2() is %d",fun2());
+printf("\n using  a static function fun3() in external function fun2() and the result is %d",fun2());
+return 0;
+}​​​​​​
+
+
+cat fun.h
+void fun1()
+{​​​​​​
+printf("fun1");
+}​​​​​​
+​[21-04 09:33] Praveen K  (CYBER)
+    
+cat out.c
+int d=100;
+
+
+static int fun3()
+{​​​​​​
+return 400;
+}​​​​​​
+int fun2()
+{​​​​​​
+return (200+fun3());
+}​​​​​​
+

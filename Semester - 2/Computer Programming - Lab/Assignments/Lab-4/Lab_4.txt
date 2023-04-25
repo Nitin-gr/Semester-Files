@@ -1,0 +1,226 @@
+                                                                                                                                               Lab – 4
+
+1. Write a C program to print day of week name using switch case. 
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    do
+    {
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    switch(num)
+    {
+    case 1:
+            printf("Monday");
+            break;
+    case 2:
+            printf("Tuesday");
+            break;
+    case 3:
+            printf("Wednesday");
+            break;
+    case 4:
+            printf("Thursday");
+            break;
+    case 5:
+            printf("Friday");
+            break;
+    case 6:
+            printf("Saturday");
+            break;
+    case 7:
+            printf("Sunday");
+            break;
+    default:
+            printf("Enter a number 1-7 \n");
+    }
+    }
+    while(num>7);
+    return 0;
+}
+
+
+2. Write a C program print total number of days in a month using switch case. 
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    do
+    {
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    switch(num)
+    {
+    case 1:
+            printf("January has 31 days");
+            break;
+    case 2:
+            printf("Feburary has 28/29 days");
+            break;
+    case 3:
+            printf("March has 31 days");
+            break;
+    case 4:
+            printf("April has 30 days");
+            break;
+    case 5:
+            printf("May has 31 days");
+            break;
+    case 6:
+            printf("June has 30 days");
+            break;
+    case 7:
+            printf("July has 31 days");
+            break;
+    case 8:
+            printf("August has 31 days");
+            break;
+    case 9:
+            printf("September has 30 days");
+            break;
+    case 10:
+            printf("October has 31 days");
+            break;
+    case 11:
+            printf("November has 30 days");
+            break;
+    case 12:
+            printf("December has 31 days");
+            break;
+    default:
+            printf("Enter a number 1-12 \n");
+    }
+    }
+    while(num>12);
+    return 0;
+}
+
+
+3. Write a program using switch case where user will enter 3 values (2 operands and 1 operator) and program will print the output after processing the operands using given operator. (Calculator) 
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2;
+    char chr;
+    printf("Enter a operator (+,-,*,/): ");
+    scanf("%c", &chr);
+    printf("Enter a number: ");
+    scanf("%d", &num1);
+    printf("Enter a number: ");
+    scanf("%d", &num2);
+
+    switch(chr)
+    {
+    case '+':
+            printf("%d %c %d = %d", num1, chr, num2, num1+num2);
+            break;
+    case '-':
+            printf("%d %c %d = %d", num1, chr, num2, num1-num2);
+            break;
+    case '*':
+            printf("%d %c %d = %d", num1, chr, num2, num1*num2);
+            break;
+    case '/':
+            printf("%d %c %d = %d", num1, chr, num2, num1/num2);
+            break;
+    default:
+            printf("Enter a valid operator\n");
+    }
+    return 0;
+}
+
+4. Write a program to enter the ship name based on the character entered. If it is B or b Battleship If it is C or c Cruiser If it is D or d Destroyer If it is F or f Frigate If it is not any of the letter print unknown ship 
+
+#include <stdio.h>
+
+int main()
+{
+    char chr;
+    printf("Enter a alphabet: ");
+    scanf("%c", &chr);
+
+    switch(chr)
+    {
+    case 'B':
+    case 'b':
+            printf("The name of the ship is Battleship");
+            break;
+    case 'C':
+    case 'c':
+            printf("The name of the ship is Cruiser");
+            break;
+    case 'D':
+    case 'd':
+            printf("The name of the ship is Destroyer ");
+            break;
+    case 'F':
+    case 'f':
+            printf("The name of the ship is Battleship");
+            break;
+    default:
+            printf("The name of the ship is unknown");
+    }
+    return 0;
+}
+
+
+5. Write a C program to display user details using their id. Details: Name, Id, Contact Number, Address. Id range: (Roll no – 2) to (Roll number+2)
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    do
+    {
+    printf("Enter the roll number: ");
+    scanf("%d", &num);
+    switch(num)
+    {
+    case 15:
+            printf("\nName: Ananya");
+            printf("\nId: CB.EN.U4CYS21015");
+            printf("\nContact Number: +91 89177 39370");
+            printf("\nAddress: Shastri Hall, Nana Chowk, Grant Road");
+            break;
+    case 16:
+            printf("\nName: Devesh");
+            printf("\nId: CB.EN.U4CYS21016");
+            printf("\nContact Number: +91 61279 19379");
+            printf("\nAddress: 1005-b, Panchhatna, M P Road, Opera House");
+            break;
+    case 17:
+            printf("\nName: Nitn");
+            printf("\nId: CB.EN.U4CYS21017");
+            printf("\nContact Number: +91 61279 21631");
+            printf("\nAddress: 1206a, Raheja Centre, Free Press Rd, Nariman Point");
+            break;
+    case 18:
+            printf("\nName: Shrishti");
+            printf("\nId: CB.EN.U4CYS21018");
+            printf("\nContact Number: +91 88477 74660");
+            printf("\nAddress:  54, Mount Poonamallee Road, St Thomas Mount");
+            break;
+    case 19:
+            printf("\nName: Skyler");
+            printf("\nId: CB.EN.U4CYS21019");
+            printf("\nContact Number: +91 61279 44062");
+            printf("\nAddress: 11/2, New Railway Road Cho");
+            break;
+    default:
+            printf("Enter a number 15-19 \n");
+    }
+    }
+    while(num>19 || num<15);
+    return 0;
+}
+
+
+

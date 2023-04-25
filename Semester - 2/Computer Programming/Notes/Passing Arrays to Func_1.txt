@@ -1,0 +1,136 @@
+//How to pass single dimensional arrays to a function..
+
+ 
+
+#include <stdio.h>
+
+ 
+
+void fun1(int arr1[], int arr2[])
+{
+int i;
+for(i=0;i<5;i++)
+printf("arr1[%d]+arr2[%d]\t%d\n",i,i,arr1[i]+arr2[i]);
+}
+
+ 
+
+void fun2(int arr1,int arr2)
+{
+printf("Sum=%d",arr1+arr2);
+}
+
+ 
+
+
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int b[5];
+    int i;
+    printf("\nEnter the elements of array b");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    
+    fun1(a,b);
+    fun2(a[2],a[4]);
+
+ 
+
+    return 0;
+}
+ 
+
+//How to pass single dimensional arrays to a function..
+
+ 
+
+#include <stdio.h>
+
+ 
+
+void fun1(int arr1[], int arr2[])
+{
+int i;
+for(i=0;i<5;i++)
+printf("arr1[%d]+arr2[%d]\t%d\n",i,i,arr1[i]+arr2[i]);
+}
+
+ 
+
+void fun2(int arr1,int arr2)
+{
+printf("Sum=%d",arr1+arr2);
+}
+
+ 
+
+
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int b[5] = { [0 ... 4] = 3};
+    int i;
+    /*
+    printf("\nEnter the elements of array b");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    */
+    fun1(a,b);
+    fun2(a[2],a[4]);
+
+ 
+
+    return 0;
+}
+
+
+//How to pass single dimensional arrays to a function..
+
+ 
+
+#include <stdio.h>
+
+ 
+
+void fun1(int arr1[], int arr2[], int arr3[])
+{
+int i;
+for(i=0;i<5;i++)
+printf("arr1[%d]+arr2[%d]+arr3[%d]\t%d\n",i,i,i,arr1[i]+arr2[i]+arr3[i]);
+}
+
+ 
+
+void fun2(int arr1,int arr2)
+{
+printf("Sum=%d",arr1+arr2);
+}
+
+ 
+
+
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int b[5] = { [0 ... 4] = 3}; //sets all elements in the array to 3
+    int c[5]={5}; // sets first element to 5 and rest to 0
+    int i;
+    /*
+    printf("\nEnter the elements of array b");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    */
+    fun1(a,b,c);
+    fun2(a[2],a[4]);
+
+ 
+
+    return 0;
+}
